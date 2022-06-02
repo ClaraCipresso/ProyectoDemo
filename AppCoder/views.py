@@ -6,5 +6,8 @@ def curso(self):
     curso = Curso(nombre="Desarrollo web", camada="24679")
     curso.save()
     documento = f"Curso: {curso.nombre} - Camada:{curso.camada}"
+    return HttpResponse(documento)
 
+def profesores(self):
+    documento = f"Pagina de profesores."
     return HttpResponse(documento)
